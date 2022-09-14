@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="scripts.js"></script>
   </head>
   <body>
     <div>
@@ -12,14 +13,16 @@
         <div class="center_prod_box">
           <div class="product_title"><a href="#">Makita 156 MX-VL</a></div>
           <div class="product_img">
-            <a href="#"><img src="images/p1.jpg" alt="" border="0" /></a>
+            <a href="#"
+              ><img src="img/correa2.png" class="product_img" alt=""
+            /></a>
           </div>
           <div class="prod_price">
-            <span class="reduce">350$</span> <span class="price">270$</span>
+            <div id="price">350</div>
           </div>
         </div>
         <div class="prod_details_tab">
-          <a href="#" class="prod_buy">Add to Cart</a>
+          <a href="#" onclick="miFuncion()" class="prod_buy">Add to Cart</a>
           <a href="#" class="prod_details">Details</a>
         </div>
       </div>

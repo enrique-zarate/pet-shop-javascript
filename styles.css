@@ -1,7 +1,7 @@
 /*---------prod_box----------*/
 .prod_box {
   width: 173px;
-  height: auto;
+  height: 190px;
   float: left;
   padding: 10px 10px 10px 11px;
 }
@@ -60,4 +60,17 @@ a.prod_buy {
   line-height: 24px;
   text-decoration: none;
   color: #006600;
+}
+
+.product_img_big {
+  width: 170px;
+  height: 190px;
+  padding: 10px 0 0 10px;
+  float: left;
+}
+
+.product_img {
+  padding: 5px 0 5px 0;
+  max-width: 100%;
+  height: auto;
 }
