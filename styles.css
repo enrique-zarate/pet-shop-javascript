@@ -1,0 +1,63 @@
+/*---------prod_box----------*/
+.prod_box {
+  width: 173px;
+  height: auto;
+  float: left;
+  padding: 10px 10px 10px 11px;
+}
+.center_prod_box {
+  width: 173px;
+  height: auto;
+  float: left;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  border: 1px #f0f4f5 solid;
+}
+.prod_details_tab {
+  width: 173px;
+  height: 31px;
+  float: left;
+  margin: 3px 0 0 0;
+}
+img.left_bt {
+  float: left;
+  padding: 6px 0 0 6px;
+}
+a.prod_details {
+  width: 75px;
+  height: 24px;
+  display: block;
+  float: right;
+  background: url(images/link_bg.gif) no-repeat center;
+  margin: 2px 5px 0 0;
+  text-align: center;
+  line-height: 24px;
+  text-decoration: none;
+  color: #159dcc;
+}
+
+a.prod_compare {
+  width: 75px;
+  height: 24px;
+  display: block;
+  float: left;
+  background: url(images/link_bg.gif) no-repeat center;
+  margin: 2px 0 0 5px;
+  text-align: center;
+  line-height: 24px;
+  text-decoration: none;
+  color: #159dcc;
+}
+a.prod_buy {
+  width: 75px;
+  height: 24px;
+  display: block;
+  float: left;
+  background: url(images/link_bg.gif) no-repeat center;
+  margin: 2px 0 0 5px;
+  text-align: center;
+  line-height: 24px;
+  text-decoration: none;
+  color: #006600;
+}
