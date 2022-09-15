@@ -18,7 +18,7 @@ function ready() {
 
   // Seleccionar cantidad del producto
   var cantidadInputs = document.getElementsByClassName("cart-quantity-input");
-  //Actualizar monto total segun la cantidad del campo cart-quantity-input
+  // Actualizar monto total segun la cantidad del campo cart-quantity-input
   // Muy parecido al de arriba
   for (var i = 0; i < cantidadInputs.length; i++) {
     var boton = cantidadInputs[i];
@@ -30,9 +30,22 @@ function ready() {
   var agregarCarritoBoton = document.getElementsByClassName("shop-item-button");
   for (var i = 0; i < agregarCarritoBoton.length; i++) {
     var boton = agregarCarritoBoton[i];
-    // Llamamos a la funcion eliminarItemCarrito()
+    // Llamamos a la funcion
     boton.addEventListener("click", agregarCarritoClick);
   }
+
+  // boton comprar
+  var botonComprar = document.getElementsByClassName("btn-purchase")[0];
+  botonComprar.addEventListener("click", comprarClicked);
+}
+
+function comprarClicked() {
+  alert("Thank you for your purchase");
+  var cartItems = document.getElementsByClassName("cart-items")[0];
+  while (cartItems.hasChildNodes()) {
+    cartItems.removeChild(cartItems.firstChild);
+  }
+  actializarTotalCarrito();
 }
 
 function eliminarItemCarrito(event) {
@@ -53,31 +66,7 @@ function cantidadCambiada(event) {
   actualizarTotal();
 }
 
-function actualizarTotal() {
-  // Traer todos los elementos de cart-items (cart-rows)
-  var cartItemContainer = document.getElementsByClassName("cart-items")[0];
-  var cartRows = cartItemContainer.getElementsByClassName("cart-row");
-  var total = 0;
-  // Loopear cada uno, obtener los precios y las cantidades
-  for (var i = 0; cartRows.length; i++) {
-    var cartRow = cartRows[i];
-    var precioElement = cartRow.getElementsByClassName("cart-price")[0];
-    var cantidadElemento = cartRow.getElementsByClassName(
-      "cart-quantity-input"
-    )[0];
-    // limpiamos el precio
-    var precio = parseFloat(precioElement.innerText.replace("$", ""));
-    var cantidad = cantidadElemento.value;
-    // Multiplicar el precio por la cantidad
-    // anhadir al total
-    total = total + precio * cantidad;
-    // redondeo
-    total = Math.floor(total * 100) / 100;
-    // escribir al innerText
-    document.getElementsByClassName("cart-total-price")[0].innerText =
-      "Gs " + total;
-  }
-}
+function actualizarTotal() {}
 
 function agregarCarritoClick(event) {
   var boton = event.target;
