@@ -5,11 +5,16 @@ body {
   min-height: 100%;
 }
 .main-header {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-image: url("Images/Header Background.jpg");
-  background-blend-mode: multiply;
+  background-color: rgba(163, 99, 99, 0.6);
+  background-image: url("img/fondopetshop.jpg");
+  background-blend-mode: soft-light;
   background-size: cover;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-family:sans-serif ;
+  text-align: center;
+  font-size: 54px;
+  
 }
 .container {
   max-width: 900px;
@@ -39,8 +44,9 @@ body {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 27px;
   color: #333;
+  text-align:left;
   margin-bottom: 15px;
 }
 
@@ -57,6 +63,8 @@ body {
 .shop-item-price {
   flex-grow: 1;
   color: #333;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .shop-items {
@@ -101,7 +109,9 @@ body {
 .cart-item-title {
   color: #333;
   margin-left: 0.5em;
-  font-size: 1.2em;
+  font-size: 25px;
+  font-weight: bold;
+  
 }
 
 .cart-item-image {
@@ -139,4 +149,55 @@ body {
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
+}
+
+.section-header {
+  color: white;
+  background-color: #2b286d;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.band-name-band-name-large{
+  color: white;
+  background-color: #2b286d;
+  border: pink;
+  border-radius: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-size: 70px;
+}
+
+.head{
+  color: white;
+  background-color: #2b286d;
+  border: pink;
+  border-radius: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-size: 70px;
+}
+
+.btn-purchase{
+  color: white;
+  background-color: #57eb81;
+  border: none;
+  border-radius: 5REM;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.shop-item-button{
+  color: white;
+  background-color: #57eb81;
+  border: #28ea5f;
+  border-radius:5REM;
+  font-weight: bold;
+  font-size: 15PX;
+
 }
