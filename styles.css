@@ -26,7 +26,10 @@ body {
   padding: 0.67em 0.67em;
   cursor: pointer;
 }
-
+p {
+  padding-top: 37px;
+  font-size: 22px;
+}
 .btn-header {
   margin: 0.5em 15% 2em 15%;
   color: white;
