@@ -57,8 +57,8 @@ function eliminarItemCarrito(event) {
 
 function cantidadCambiada(event) {
   var input = event.target;
-  // validar si el input es o no un numero
-  // Validar si la cantidad es mayor a 0, si no cumple, actualizar valor a 1
+  // Validar si el input es o no un numero
+  // Validar si la cantidad es mayor a 0  o si no es numero, si no cumple, actualizar valor a 1
   if (isNaN(input.value) || input.value <= 0) {
     input.value = 1;
   }
@@ -139,7 +139,7 @@ function agregarItemCarrito(titulo, precio, imagenSrc) {
   <span class="cart-price cart-column">${precio}</span>
   <div class="cart-quantity cart-column">
     <input class="cart-quantity-input" type="number" value="1" />
-    <button class="btn btn-danger" type="button">REMOVER</button>
+    <button class="btn btn-danger bg-red-600" type="button">REMOVER</button>
   </div>`;
   carritoRow.innerHTML = carritoNuevoItem;
   // anhadimos el nuevo item a la lista de items del carrito
