@@ -144,6 +144,7 @@ function agregarItemCarrito(titulo, precio, imagenSrc) {
   carritoRow.innerHTML = carritoNuevoItem;
   // anhadimos el nuevo item a la lista de items del carrito
   carritoItems.append(carritoRow);
+  // actualizamos el total
   actualizarTotal();
 }
 

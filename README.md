@@ -1,6 +1,5 @@
 # pet-shop-javascript
 
+Para trabajo final de la UCOM
 
-carrito de compras:
-
-actualizar total y cantidad cambiada
+Materia: JavaScript

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login y Register</title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <main>
+            <div class="contenedor_todo">
+                <div class="caja_trasera">
+                    <div class="caja_trasera_login">
+                        <h3>Ya tienes una cuenta?</h3>
+                        <p>Inicia sesion para entrar en la pagina </p>
+                        <button onclick="InicioSesion()">Iniciar sesion</button>
+                    </div>
+                    <div class="caja_trasera_register">
+                        <h3>Ya tienes una cuenta?</h3>
+                        <p>Inicia sesion para entrar en la pagina </p>
+                        <button onclick="register()">registrarse</button>
+                    </div>
+                </div>
+                <div class="contenedor_login_register">
+                    <form action="" class="formulario_login">
+                        <h2>Iniciar Sesion</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contrasenha" id="contranha">
+                        <button>Entrar</button>
+                    </form>
+                    <form action="" class="formulario_register">
+                        <h2>Registrarse</h2>
+                        <input type="text" placeholder="Nombre Completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contrasenha" id="contrasenha_register">
+                        <input type="password" placeholder="Confirmar Contrasenha" id="confirmarcontraenha">
+                        <button onclick="verficar()">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="register.js"></script>
+</html>
